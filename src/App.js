@@ -1,13 +1,14 @@
-import React from "react";
-import Button from "@material-ui/core/Button";
+import React from 'react';
+import { ThemeProvider } from '@material-ui/styles';
+import Header from './components/Ui/Header';
+import theme from './components/Ui/Theme';
 
 const App = () => {
   return (
-    <div>
-      <Button variant="contained" color="primary">
-        Hello Wordl!
-      </Button>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Header />
+      App
+    </ThemeProvider>
   );
 };
 
